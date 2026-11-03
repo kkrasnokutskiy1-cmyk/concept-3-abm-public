@@ -1,0 +1,79 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/d922469f-5048-4a44-b87a-e965c6e9fa6e";
+const imgBlur06Px = `${assetPathPrefix}/4f59c.svg`;
+const imgBlur26Px = `${assetPathPrefix}/ab825.svg`;
+const imgBlur58Px = `${assetPathPrefix}/9b68a.svg`;
+const imgBlur102Px = `${assetPathPrefix}/90852.svg`;
+const imgBlur160Px = `${assetPathPrefix}/60af6.svg`;
+const imgBlur230Px = `${assetPathPrefix}/14a58.svg`;
+const imgBlur314Px = `${assetPathPrefix}/22f8b.svg`;
+const imgBlur410Px = `${assetPathPrefix}/5a765.svg`;
+const imgBlur518Px = `${assetPathPrefix}/445a7.svg`;
+const imgBlur640Px = `${assetPathPrefix}/248a1.svg`;
+const imgHomeAngleSvgrepoCom1 = `${assetPathPrefix}/1ac9a.svg`;
+const imgRubleSvgrepoCom1 = `${assetPathPrefix}/e40a6.svg`;
+const imgClockCircleSvgrepoCom1 = `${assetPathPrefix}/0be51.svg`;
+const imgFrame2136141757 = `${assetPathPrefix}/67566.svg`;
+
+export default function ProgressiveBlur() {
+  return (
+    <div className="relative size-full" data-node-id="3892:212583" data-name="Progressive Blur">
+      <div className="absolute contents inset-0" data-node-id="3892:212584" data-name="Blur 1">
+        <div className="absolute backdrop-blur-[0.32px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212586" style={{ maskImage: `url("${imgBlur06Px}")` }} data-name="Blur 0.6px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212587" data-name="Blur 2">
+        <div className="absolute backdrop-blur-[1.28px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212589" style={{ maskImage: `url("${imgBlur26Px}")` }} data-name="Blur 2.6px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212590" data-name="Blur 3">
+        <div className="absolute backdrop-blur-[2.88px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212592" style={{ maskImage: `url("${imgBlur58Px}")` }} data-name="Blur 5.8px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212593" data-name="Blur 4">
+        <div className="absolute backdrop-blur-[5.12px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212595" style={{ maskImage: `url("${imgBlur102Px}")` }} data-name="Blur 10.2px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212596" data-name="Blur 5">
+        <div className="absolute backdrop-blur-[8px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212598" style={{ maskImage: `url("${imgBlur160Px}")` }} data-name="Blur 16.0px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212599" data-name="Blur 6">
+        <div className="absolute backdrop-blur-[11.52px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212601" style={{ maskImage: `url("${imgBlur230Px}")` }} data-name="Blur 23.0px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212602" data-name="Blur 7">
+        <div className="absolute backdrop-blur-[15.68px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212604" style={{ maskImage: `url("${imgBlur314Px}")` }} data-name="Blur 31.4px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212605" data-name="Blur 8">
+        <div className="absolute backdrop-blur-[20.48px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212607" style={{ maskImage: `url("${imgBlur410Px}")` }} data-name="Blur 41.0px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212608" data-name="Blur 9">
+        <div className="absolute backdrop-blur-[25.92px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212610" style={{ maskImage: `url("${imgBlur518Px}")` }} data-name="Blur 51.8px" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="3892:212611" data-name="Blur 10">
+        <div className="absolute backdrop-blur-[32px] bg-[rgba(54,65,81,0.05)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="3892:212613" style={{ maskImage: `url("${imgBlur640Px}")` }} data-name="Blur 64.0px" />
+      </div>
+      <div className="absolute content-stretch flex items-center left-0 right-0 top-[33px]" data-node-id="3892:212614">
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px p-[12px] relative rounded-[24px]" data-node-id="3892:212615">
+          <div className="relative shrink-0 size-[28px]" data-node-id="3892:212616" data-name="home-angle-svgrepo-com 1">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeAngleSvgrepoCom1} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px p-[12px] relative rounded-[24px]" data-node-id="3892:212618">
+          <div className="relative shrink-0 size-[28px]" data-node-id="3892:212619" data-name="ruble-svgrepo-com 1">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRubleSvgrepoCom1} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px p-[12px] relative rounded-[24px]" data-node-id="3892:212622">
+          <div className="relative shrink-0 size-[28px]" data-node-id="3892:212623" data-name="clock-circle-svgrepo-com 1">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgClockCircleSvgrepoCom1} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px p-[12px] relative rounded-[24px]" data-node-id="3892:212627">
+          <div className="relative shrink-0 size-[32px]" data-node-id="3892:212628">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2136141757} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 h-[25px] left-0 right-0" data-node-id="3892:212630" data-name="Bars / Home Indicator">
+        <div className="absolute inset-0 overflow-clip" data-node-id="I3892:212630;1928:32075" data-name="Group">
+          <div className="-translate-x-1/2 absolute bg-[rgba(255,255,255,0.8)] bottom-[7.06px] h-[4.413px] left-[calc(50%-0.44px)] rounded-[100px] w-[118.277px]" data-node-id="I3892:212630;1928:32077" data-name="Home Indicator" />
+        </div>
+      </div>
+    </div>
+  );
+}

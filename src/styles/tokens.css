@@ -1,0 +1,155 @@
+/*
+ * Дизайн-токены экрана «Main-full» (Figma hBT4KPR113TtiJBWTvyAbV, узел 3892:211565).
+ * Значения взяты из get_variable_defs / get_design_context. Новые литералы
+ * в компонентах не заводим — добавляем переменную сюда.
+ */
+:root {
+  /* Figma variables */
+  --fx-static-neutral-0: #ffffff;
+  --fx-grape-soda: #7a63f1;
+  --fx-ube-juice: #8c00f2;
+  --fx-grenadine: #ff1418;
+
+  /* Текст */
+  --fx-text-primary: #18181b;
+  --fx-text-secondary: rgba(24, 24, 27, 0.88);
+  --fx-text-tertiary: rgba(24, 24, 27, 0.6);
+  --fx-text-muted: #71717b;
+  --fx-text-ai-fallback: #2d2d2d;
+  --fx-text-on-dark: #fafafa;
+
+  /* Акценты и элементы управления */
+  --fx-badge-bg: #e82824;
+  --fx-warning: #f8bd2c;
+  --fx-warning-halo: rgba(248, 189, 44, 0.2);
+  --fx-btn-primary-bg: #191b18;
+  --fx-btn-primary-text: #fafafa;
+  --fx-btn-secondary-bg: rgba(24, 24, 27, 0.04);
+  --fx-fill-subtle: rgba(24, 24, 27, 0.04);
+  --fx-fill-track: rgba(24, 24, 27, 0.08);
+  --fx-border: #e4e4e7;
+  --fx-positive: #009966;
+  --fx-negative: #e7000b;
+  --fx-negative-soft: rgba(231, 0, 11, 0.04);
+  --fx-amber: #fe9a00;
+  --fx-amber-soft: rgba(254, 154, 0, 0.45);
+  --fx-amber-halo: rgba(254, 154, 0, 0.25);
+  --fx-fill-muted: #f0f0f1;
+  --fx-chart-muted: #d4d4d8;
+  --fx-chart-outflow: #9f9fa9;
+  --fx-chart-faint: #ececec;
+  --fx-chart-total: #3f3f47;
+  --fx-chart-axis: #666666;
+  --fx-pager-active: rgba(24, 24, 27, 0.45);
+  --fx-risk-bg: rgba(254, 0, 4, 0.12);
+  --fx-tax-gap-bg: rgba(254, 154, 0, 0.2);
+  --fx-payroll-bg: rgba(240, 240, 241, 0.6);
+  --fx-tab-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  --fx-blur-tint: rgba(54, 65, 81, 0.05);
+  --fx-gradient-ai: linear-gradient(90deg, var(--fx-grape-soda) 0%, var(--fx-ube-juice) 100%);
+
+  /* Фон */
+  --fx-bg: #f2f3f5;
+  /* Figma 3958:214254: белый под шапкой (до 100px), к 500px — плавно в --fx-bg */
+  --fx-bg-top: #ffffff;
+  --fx-bg-gradient: linear-gradient(180deg, var(--fx-bg-top) 100px, var(--fx-bg) 500px);
+  --fx-surface: #ffffff;
+
+  /* Spacing (Figma: spacing/*) */
+  --fx-space-xxxs: 2px;
+  --fx-space-xxs: 4px;
+  --fx-space-xs: 8px;
+  --fx-space-s: 12px;
+  --fx-space-m: 16px;
+  --fx-space-l: 20px;
+  --fx-stroke: 1px;
+
+  /* Радиусы */
+  --fx-radius-card: 20px;
+  --fx-radius-pill: 99px;
+
+  /* Glass-поверхность (кнопки шапки, статус-бар) */
+  --fx-shadow-glass: 0 6px 16px 0 rgba(255, 255, 255, 0.06), 0 1px 6px 0 rgba(3, 3, 6, 0.04), 0 0 1.6px 0 #e8e8eb;
+  --fx-shadow-glass-inset: inset 0 -2px 8px 0 rgba(255, 255, 255, 0.3);
+  --fx-glass-stop-edge: rgba(255, 255, 255, 0.4);
+  --fx-glass-stop-mid: rgba(255, 255, 255, 0.8);
+
+  /* ИИ-плашки: точная матрица радиального fill из 3892:212089.
+     GLASS не имеет прямого CSS-эквивалента: blur и направленный тон —
+     браузерная аппроксимация, отдельно от исходных fill / Star / теней. */
+  --fx-ai-glass-fill: url("data:image/svg+xml,%3Csvg viewBox='0 0 337 120.5' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Cdefs%3E%3CradialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(15.524 9.4834 -18.677 17.792 153.46 48.057)'%3E%3Cstop stop-color='white' stop-opacity='.4' offset='0'/%3E%3Cstop stop-color='white' stop-opacity='.8' offset='.49589'/%3E%3Cstop stop-color='white' stop-opacity='.4' offset='1'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+  --fx-ai-glass-optical-tone: linear-gradient(158deg, transparent 40%, var(--fx-fill-subtle) 100%);
+  --fx-ai-glass-backdrop-blur: 12px;
+
+  /* Типографика: SF Pro (системный шрифт Apple), фолбэки для остальных ОС */
+  --fx-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --fx-font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --fx-weight-regular: 400;
+  --fx-weight-medium: 500; /* Figma SF Pro 510: Chrome округляет 510 вверх до 600 */
+  --fx-weight-semibold: 590;
+  --fx-weight-bold: 700;
+  --fx-text-13: 13px;
+  --fx-lh-13: 19.5px;
+  --fx-tracking-13: -0.1242px;
+
+  /* Геометрия */
+  --fx-screen-width: 393px;
+  --fx-gutter: 8px;
+
+  /* Motion */
+  --fx-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --fx-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --fx-dur-press: 120ms;
+  --fx-dur-fast: 280ms;
+  --fx-dur-base: 420ms;
+  --fx-dur-reveal: 700ms; /* = DURATION.reveal в motion/tokens.ts */
+  /* Перелив свечения Star: полный цикл туда-обратно — 2 × значение */
+  --fx-dur-star-shimmer: 5.5s;
+}
+
+/*
+ * Токены прежнего прототипа (экран 3892:210354, /?version=prev — LegacyApp,
+ * src/components/screen/*, src/styles/screen.css). Имена не пересекаются с --fx-*.
+ */
+:root {
+  color-scheme: light;
+  --color-bg: #f6f6f7;
+  --color-surface: #fff;
+  --color-ink: #18181b;
+  --color-ink-soft: #2d2d2d;
+  --color-muted: #71717b;
+  --color-faint: #9f9fa9;
+  --color-line: #e8e8eb;
+  --color-soft: rgba(24, 24, 27, 0.04);
+  --color-positive: #009966;
+  --color-danger: #e82824;
+  --color-warning: #f8bd2c;
+  --color-violet: #8c00f2;
+  --color-grape: #7a63f1;
+  --chart-1: #18181b;
+  --chart-2: #9f9fa9;
+  --chart-3: #d4d4d8;
+  --chart-4: #ececec;
+
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 10px;
+  --space-5: 12px;
+  --space-6: 16px;
+  --space-7: 20px;
+  --space-8: 24px;
+
+  --radius-sm: 8px;
+  --radius-button: 12px;
+  --radius-card-inner: 14px;
+  --radius-card: 20px;
+  --radius-pill: 999px;
+
+  --shadow-surface: 0 6px 16px rgba(255,255,255,.06), 0 1px 6px rgba(3,3,6,.04), 0 0 1.6px #e8e8eb;
+  --shadow-inset: inset 0 -2px 8px rgba(255,255,255,.3);
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out: cubic-bezier(.77, 0, .175, 1);
+  --duration-fast: 120ms;
+  --duration-ui: 150ms;
+}

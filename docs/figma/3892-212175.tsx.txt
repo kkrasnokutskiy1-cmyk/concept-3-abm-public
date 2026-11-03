@@ -1,0 +1,100 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/32f45e63-c324-49de-923c-0b1836dd4f6c";
+const imgStar24 = `${assetPathPrefix}/23d27.png`;
+const imgShadow = `${assetPathPrefix}/4472e.svg`;
+const imgNeuralAssistantSignCircleMColor = `${assetPathPrefix}/ef453.svg`;
+const imgIcon = `${assetPathPrefix}/8740b.svg`;
+
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212175" data-name="Section">
+      <div className="content-stretch flex gap-[9px] items-center px-[20px] relative shrink-0 w-full" data-node-id="3892:212176" data-name="Header">
+        <div className="content-stretch flex items-center justify-center max-h-[20.000000476837158px] max-w-[20.000000476837158px] min-h-[20.000000476837158px] min-w-[20.000000476837158px] relative shrink-0 size-[20px]" data-node-id="3892:212177" data-name="Icon 28">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-[calc(50%+1.43px)] size-[31.429px] top-[calc(50%+1.43px)]" data-node-id="I3892:212177;973:2258" data-name="🔩 Shadow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShadow} />
+          </div>
+          <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="I3892:212177;973:2238" data-name="neural-assistant-sign-circle_m_color">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgNeuralAssistantSignCircleMColor} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] bg-clip-text font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[20px] text-[transparent] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212178" style={{ fontVariationSettings: '"wdth" 100', backgroundImage: "linear-gradient(90deg, var(--static_corp\\/grape-soda,rgb(122, 99, 241)) 0%, var(--static_corp\\/ube-juice,rgb(140, 0, 242)) 100%), linear-gradient(90deg, rgb(24, 24, 27) 0%, rgb(24, 24, 27) 100%)" }}>
+          Проверка платежа
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start px-[8px] relative shrink-0 w-full" data-node-id="3892:212179">
+        <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip p-[20px] relative rounded-[20px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-full" data-node-id="3892:212180" data-name="Section">
+          <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[20px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 377 360' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(17.366 28.332 -20.894 53.155 171.67 143.57)'><stop stop-color='rgba(255,255,255,0.4)' offset='0'/><stop stop-color='rgba(255,255,255,0.8)' offset='0.49589'/><stop stop-color='rgba(255,255,255,0.4)' offset='1'/></radialGradient></defs></svg>\")" }} />
+          <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="3892:212181" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212182" data-name="Paragraph">
+              <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212183" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ООО «Порт» → ООО «Терминал Восток»
+              </p>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex font-['SF_Pro:Medium'] font-[510] gap-[6px] items-baseline relative shrink-0 w-[337px] whitespace-nowrap" data-node-id="3892:212184">
+              <p className="leading-[34px] relative shrink-0 text-[#18181b] text-[30px] tracking-[-0.3545px]" data-node-id="3892:212185" style={{ fontVariationSettings: '"wdth" 100' }}>
+                184 млн
+              </p>
+              <p className="leading-[17px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-1.1816px]" data-node-id="3892:212186" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ₽
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212187">
+            <div className="bg-[rgba(254,0,4,0.12)] content-stretch flex flex-col items-start px-[14px] py-[12px] relative rounded-[14px] shrink-0 w-full" data-node-id="3892:212188" data-name="Container">
+              <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full" data-node-id="3892:212189" data-name="List">
+                <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="3892:212190" data-name="List Item">
+                  <div className="content-stretch flex items-start pt-[7px] relative shrink-0" data-node-id="3892:212191" data-name="Text:margin">
+                    <div className="bg-[rgba(24,24,27,0.6)] relative rounded-[16777200px] shrink-0 size-[4px]" data-node-id="3892:212192" data-name="Text" />
+                  </div>
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#18181b] text-[13px] text-pretty tracking-[-0.1242px] w-[280px]" data-node-id="3892:212193" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Реквизиты получателя изменились 3 дня назад, новый счёт в другом банке
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="3892:212194" data-name="List Item">
+                  <div className="content-stretch flex items-start pt-[7px] relative shrink-0" data-node-id="3892:212195" data-name="Text:margin">
+                    <div className="bg-[rgba(24,24,27,0.6)] relative rounded-[16777200px] shrink-0 size-[4px]" data-node-id="3892:212196" data-name="Text" />
+                  </div>
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#18181b] text-[13px] text-pretty tracking-[-0.1242px] w-[280px]" data-node-id="3892:212197" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Сумма в 1,8 раза больше самого крупного платежа этому получателю
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="3892:212198" data-name="List Item">
+                  <div className="content-stretch flex items-start pt-[7px] relative shrink-0" data-node-id="3892:212199" data-name="Text:margin">
+                    <div className="bg-[rgba(24,24,27,0.6)] relative rounded-[16777200px] shrink-0 size-[4px]" data-node-id="3892:212200" data-name="Text" />
+                  </div>
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#18181b] text-[13px] text-pretty tracking-[-0.1242px] w-[280px]" data-node-id="3892:212201" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    После платежа лимит на контрагента загружен на 89% (порог 85%)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex h-[44px] items-center justify-between relative shrink-0 w-full" data-node-id="3892:212202" data-name="Container:margin">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-[296px]" data-node-id="3892:212203" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[18px] relative shrink-0 text-[#18181b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212204" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Получатель, история сумм, влияние
+                </p>
+              </div>
+              <div className="relative shrink-0 size-[16px]" data-node-id="3892:212205" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[rgba(24,24,27,0.04)] content-stretch flex h-[44px] items-center justify-center px-[10px] relative rounded-[12px] shrink-0 w-full" data-node-id="3892:212207" data-name="Button">
+            <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[18.571px] relative shrink-0 text-[#18181b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212208" style={{ fontVariationSettings: '"wdth" 100' }}>
+              Запросить подтверждение
+            </p>
+          </div>
+          <div className="absolute flex h-[650.13px] items-center justify-center mix-blend-plus-lighter right-[64.08px] top-[-347.69px] w-[700.103px]" data-node-id="3892:212209">
+            <div className="flex-none rotate-[-78.79deg]">
+              <div className="h-[606.174px] opacity-70 relative w-[542.635px]">
+                <div className="absolute inset-[-12.37%_-13.82%]">
+                  <img alt="" className="block max-w-none size-full" height="756.174" src={imgStar24} width="692.635" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

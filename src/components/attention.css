@@ -1,0 +1,51 @@
+/* «Внимание» в раскрытом виде — Figma 3930:214065. Оси внутри той же стеклянной карточки. */
+.mf-attention__card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--fx-space-m) 24px var(--fx-space-m) var(--fx-space-l);
+  border-radius: var(--fx-radius-card);
+}
+.mf-attention__icon { flex: none; }
+.risk-axes { overflow: hidden; }
+/* gap 10 между шапкой и списком — внутри анимируемой высоты, чтобы свёрнутая карточка оставалась 76px */
+.risk-axes > ul { display: flex; flex-direction: column; gap: 2px; padding-top: 10px; }
+.risk-axis {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+.risk-axis__heading {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--fx-space-xs);
+  width: 100%;
+  font: var(--fx-weight-medium) 13px/18px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-primary);
+}
+.risk-axis__heading > span { white-space: nowrap; }
+.risk-axis__value { font-weight: var(--fx-weight-regular); color: var(--fx-text-muted); }
+.risk-axis--warning .risk-axis__value { font-weight: var(--fx-weight-medium); color: var(--fx-text-primary); }
+.risk-axis__gauge { position: relative; display: flex; gap: 3px; width: 100%; height: 8px; }
+.risk-axis__segment { flex: 1; border-radius: 2px; background: var(--fx-fill-subtle); }
+.risk-axis__segment--filled { background: var(--fx-pager-active); }
+.risk-axis--warning .risk-axis__segment--filled { background: var(--fx-amber); }
+.risk-axis__threshold {
+  position: absolute;
+  top: -4px;
+  width: 2px;
+  height: 16px;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-text-primary);
+  transform: translateX(-50%);
+}
+.risk-axis__reason { overflow: hidden; }
+.risk-axis__reason > p { padding: 0 0 var(--fx-space-s); }
+@media (max-width: 359px) {
+  .risk-axis__heading { flex-wrap: wrap; }
+}

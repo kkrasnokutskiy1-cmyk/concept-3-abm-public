@@ -1,0 +1,40 @@
+/* Геометрия стопок: Figma 3930:212968 и 3930:213029. Поверхности — ui.css. */
+.fx-card-stack { position: relative; isolation: isolate; padding-bottom: 16px; }
+.fx-card-stack[data-count='1'] { padding-bottom: 0; }
+.fx-card-stack__front { position: relative; z-index: 2; touch-action: pan-y; user-select: none; border-radius: var(--fx-radius-card); cursor: grab; }
+.fx-card-stack__front[data-moving] { cursor: grabbing; will-change: transform, opacity, filter; }
+.fx-card-stack__front:focus-visible { outline: 2px solid var(--fx-text-primary); outline-offset: var(--fx-space-xxs); }
+/* Подсказка появляется только во время жеста; текст карточек не просвечивает сквозь неё. */
+.fx-card-stack .fx-card-stack__hint { position: absolute; z-index: 3; right: var(--fx-space-l); bottom: calc(var(--fx-space-m) + var(--fx-space-l)); display: flex; align-items: center; gap: var(--fx-space-xs); padding: var(--fx-space-xs) var(--fx-space-s); border: var(--fx-stroke) solid var(--fx-surface); border-radius: var(--fx-radius-pill); background-color: var(--fx-glass-stop-mid); color: var(--fx-text-primary); font-weight: var(--fx-weight-medium); pointer-events: none; white-space: nowrap; -webkit-backdrop-filter: blur(var(--fx-ai-glass-backdrop-blur)); backdrop-filter: blur(var(--fx-ai-glass-backdrop-blur)); }
+.fx-card-stack .fx-card-stack__hint--right { right: auto; left: var(--fx-space-l); }
+/* Задние слои — следующие карточки очереди. Нижний край привязан к низу
+   контейнера, масштаб и обрезка до видимого края считаются в CardStack.tsx. */
+.fx-card-stack__back { position: absolute; left: 0; right: 0; bottom: 0; transform-origin: 50% 100%; pointer-events: none; user-select: none; }
+.fx-card-stack__back > * { pointer-events: none; }
+.fx-card-stack[data-count='2'] { padding-bottom: 9px; }
+.fx-card-stack .decision { min-height: 222px; justify-content: space-between; }
+.fx-card-stack .decision .fx-btn { white-space: normal; }
+.stack-feedback { display: flex; align-items: center; gap: var(--fx-space-xs); padding: var(--fx-space-xs) var(--fx-space-xxs) 0; }
+.stack-feedback > p { flex: 1; min-width: 0; }
+.stack-feedback__undo { min-height: 44px; flex-shrink: 0; font-weight: var(--fx-weight-medium); }
+.tasks-stack-toggle { position: relative; flex: none; display: flex; }
+.tasks-list { display: flex; flex-direction: column; gap: var(--fx-space-xs); }
+/* Стопка ⇄ список (TasksInProgress.tsx): высота тянется пружиной, уходящий вид
+   (popLayout — absolute) лежит под новым. Пока высота меняется, хвост уходящего
+   вида обрезается чуть ниже блока: тени стекла остаются, на соседнюю секцию не наезжает. */
+.tasks-morph__inner { position: relative; }
+.tasks-morph__view { position: relative; }
+.tasks-morph--active { clip-path: inset(-24px); }
+.tasks-stack-toggle::before, .tasks-stack-section .tasks__remind::before { content: ''; position: absolute; inset: -12px -8px; }
+.tasks-stack-section .tasks__remind { position: relative; }
+.tasks-stack-section .tasks__card { min-height: 158px; }
+.tasks-stack-section .tasks__info .fx-caption { white-space: normal; }
+.steps__line--done { background: var(--fx-amber-soft); }
+.steps__line--next { background: var(--fx-fill-subtle); }
+.steps--neutral .steps__line--done, .steps--neutral .steps__dot--done { background: var(--fx-text-tertiary); }
+.steps--neutral .steps__dot--current { background: var(--fx-text-primary); box-shadow: none; }
+.task-stage-details { display: flex; flex-direction: column; gap: var(--fx-space-xs); }
+@media (max-width: 374px) {
+  .tasks-stack-section .fx-section__title-wrap { flex-wrap: wrap; row-gap: var(--fx-space-xxs); }
+  .fx-card-stack .fx-amount__value { white-space: normal; }
+}

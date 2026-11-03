@@ -1,0 +1,362 @@
+/* ---------- TopBar 3930:212854 (393×98) ---------- */
+/*
+ * Шапка закреплена (sticky). При прокрутке вниз она уезжает вверх на высоту строки
+ * «Альфа-Интеллект», а статус-бар встречно возвращается на место — время не двигается.
+ * Обе трансформации идут с одной кривой, поэтому сумма в каждом кадре = 0.
+ * Высота в потоке не меняется: контент под шапкой не прыгает.
+ */
+.topbar {
+  --topbar-collapse: 36px; /* строка 20 + padding-bottom 16; = COLLAPSE в TopBar.tsx */
+  /* Возврат после покоя — неспешный, сворачивание при прокрутке — быстрое */
+  --topbar-motion: var(--fx-dur-reveal) var(--fx-ease-in-out);
+  position: sticky;
+  top: 0;
+  z-index: 20; /* под нижней панелью (30) */
+  transition: transform var(--topbar-motion);
+  /* Внешний слой несёт только тень стекла (fx-glass) и сдвиг: обрезка — на .topbar__surface,
+     иначе clip-path срезал бы тень и нижнюю кромку плашки */
+  border-radius: 0 0 var(--fx-radius-card) var(--fx-radius-card);
+}
+/*
+ * Figma 3930:212854: plus-lighter у Star складывается со стеклом и подложкой цвета
+ * страницы (--fx-bg) — на светло-сером получается мягкий розовый ореол, а время
+ * над ним окрашивается в сливовый. На белой подложке белый + свечение = белый,
+ * поэтому здесь именно --fx-bg. clip-path явно обрезает transformed/mix-blend Star:
+ * одного overflow: clip недостаточно в Chromium-композиторе у sticky-слоя со скруглением.
+ */
+.topbar__surface {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: var(--fx-space-m);
+  overflow: clip;
+  border-radius: inherit;
+  clip-path: inset(0 round 0 0 var(--fx-radius-card) var(--fx-radius-card));
+  background:
+    radial-gradient(
+      ellipse 58% 210% at 45.5% 40%,
+      var(--fx-glass-stop-edge) 0%,
+      var(--fx-glass-stop-mid) 49.589%,
+      var(--fx-glass-stop-edge) 100%
+    ),
+    var(--fx-bg);
+}
+.topbar--compact {
+  --topbar-motion: var(--fx-dur-fast) var(--fx-ease-out);
+  transform: translateY(calc(-1 * var(--topbar-collapse)));
+}
+.topbar::after {
+  box-shadow: inset 1px -1px 2px 0 var(--fx-static-neutral-0), var(--fx-shadow-glass-inset);
+}
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 154px;
+  width: 100%;
+  height: 62px;
+  padding: 21px 16px 19px;
+  transition: transform var(--topbar-motion);
+}
+.topbar--compact .statusbar {
+  transform: translateY(var(--topbar-collapse));
+}
+.statusbar__time,
+.statusbar__levels {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 22px;
+}
+.statusbar__time {
+  padding-top: 2px;
+  font: var(--fx-weight-semibold) 17px/22px var(--fx-font);
+  color: var(--fx-text-primary);
+}
+.statusbar__levels {
+  gap: 7px;
+  padding-top: 1px;
+}
+.topbar__ai {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  padding: 0 var(--fx-space-l);
+  /* Проявляется, когда шапка уже почти вернулась: без вспышки поверх статус-бара */
+  transition: opacity var(--fx-dur-base) var(--fx-ease-out) calc(var(--fx-dur-base) / 2);
+}
+/* Подпись уходит под статус-бар — гасим быстрее, чем едет шапка */
+.topbar--compact .topbar__ai {
+  opacity: 0;
+  transition-duration: var(--fx-dur-press);
+  transition-delay: 0s;
+}
+
+/* ---------- Header 3930:212862 (393×64) ---------- */
+.header {
+  padding: var(--fx-space-xs) var(--fx-space-m);
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  overflow: clip;
+  flex: none;
+}
+.avatar__inner {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 44px;
+  height: 44px;
+  overflow: clip;
+  border-radius: 39.417px;
+}
+.avatar__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatar__photo {
+  position: absolute;
+  left: -0.46px;
+  top: 0;
+  width: 52.25px;
+  height: 52.25px;
+  object-fit: cover;
+}
+.avatar__ring {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  overflow: clip;
+  border-radius: 46.75px;
+}
+.avatar__ring img {
+  flex: none;
+  width: 77px;
+  height: 77px;
+  object-fit: cover;
+}
+.org-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  border-radius: var(--fx-radius-pill);
+  background: radial-gradient(
+    ellipse 58% 210% at 45.5% 40%,
+    var(--fx-glass-stop-edge) 0%,
+    var(--fx-glass-stop-mid) 49.589%,
+    var(--fx-glass-stop-edge) 100%
+  );
+}
+.org-pill__name {
+  display: block;
+  width: 172px;
+  margin-bottom: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font: var(--fx-weight-medium) 13px/19.5px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-primary);
+}
+.org-pill__role {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font: var(--fx-weight-regular) 13px/16px var(--fx-font);
+  color: var(--fx-text-secondary);
+  opacity: 0.5;
+}
+.round-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  overflow: clip;
+  border-radius: var(--fx-radius-pill);
+}
+
+/* ---------- Hero 3930:212883 ---------- */
+.hero {
+  padding: 0 var(--fx-gutter);
+  touch-action: pan-y;
+}
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-l);
+  padding: 20px 20px 18px;
+  border-radius: var(--fx-radius-card);
+  overflow: clip;
+}
+.hero__summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-s);
+}
+/* Figma 3930:212887: подпись h18.5 + сумма 30/34, gap 8 */
+.hero__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xs);
+}
+.hero__meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 18.5px;
+}
+.hero__meta > * {
+  margin-top: -0.5px;
+}
+.hero__delta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero__delta-value {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-xxs);
+  font: var(--fx-weight-medium) 13px/18px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-positive);
+}
+.hero__bar {
+  display: flex;
+  gap: 3px;
+  height: 32px;
+  overflow: clip;
+  border-radius: var(--fx-space-xs);
+}
+.hero__bar-seg {
+  height: 100%;
+  border-radius: var(--fx-space-xxs);
+  transform-origin: left center;
+}
+.hero__bar-seg--main {
+  flex: 1 0 0;
+  min-width: 1px;
+  background: repeating-linear-gradient(135deg, var(--fx-text-primary) 0 2.4px, var(--fx-chart-total) 2.4px 4.2px);
+}
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mf-bank-row {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-s);
+  width: 100%;
+  height: 52px;
+  padding: 0 var(--fx-space-m);
+  border-radius: 16px;
+  overflow: clip;
+  text-align: left;
+}
+.mf-bank-row__dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--fx-radius-pill);
+}
+.mf-bank-row__name {
+  flex: 182.266 0 0;
+  min-width: 0;
+  font: var(--fx-weight-medium) 13px/19.5px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-ai-fallback);
+  white-space: nowrap;
+}
+.mf-bank-row__amount {
+  flex: none;
+  font: var(--fx-weight-regular) 13px/19.5px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-ai-fallback);
+  white-space: nowrap;
+}
+.mf-bank-row img {
+  flex: none;
+}
+
+/* ---------- PagerDots 3930:212945 ---------- */
+.mf-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 6px;
+}
+.mf-pager__dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 5px;
+  background: var(--fx-text-ai-fallback);
+  opacity: 0.05;
+}
+.mf-pager__dot--active {
+  width: 20px;
+  background: var(--fx-pager-active);
+  opacity: 1;
+}
+
+/* ---------- Attention 3892:211663 ---------- */
+.mf-attention {
+  padding: var(--fx-space-m) var(--fx-gutter);
+}
+.mf-attention__btn {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-m);
+  width: 100%;
+  text-align: left;
+}
+.mf-attention__text {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: var(--fx-space-xxs);
+  min-width: 0;
+}
+.mf-attention__title {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-xs);
+  font: var(--fx-weight-medium) 17px/22px var(--fx-font-display);
+  letter-spacing: -0.6866px;
+  color: var(--fx-text-primary);
+}
+.mf-attention__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-warning);
+  box-shadow: 0 0 0 2.5px var(--fx-warning-halo);
+}

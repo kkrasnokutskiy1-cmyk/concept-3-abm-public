@@ -1,0 +1,137 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/ab811317-0185-4425-ae83-bfbee4c5134c";
+const imgIcon = `${assetPathPrefix}/8740b.svg`;
+
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212210" data-name="Section">
+      <div className="content-stretch flex items-end justify-between px-[20px] relative shrink-0 w-full" data-node-id="3892:212211" data-name="Header">
+        <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[20px] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212212" style={{ fontVariationSettings: '"wdth" 100' }}>
+          План-факт
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start px-[8px] relative shrink-0 w-full" data-node-id="3892:212213">
+        <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip p-[20px] relative rounded-[24px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-full" data-node-id="3892:212214" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[24px]" />
+          <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="3892:212215" data-name="Container">
+            <div className="[word-break:break-word] content-stretch flex font-['SF_Pro:Medium'] font-[510] gap-[6px] items-baseline relative shrink-0 w-[337px] whitespace-nowrap" data-node-id="3892:212216">
+              <p className="leading-[34px] relative shrink-0 text-[#18181b] text-[30px] tracking-[-0.3545px]" data-node-id="3892:212217" style={{ fontVariationSettings: '"wdth" 100' }}>
+                +233 млн
+              </p>
+              <p className="leading-[17px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-1.1816px]" data-node-id="3892:212218" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ₽
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212219" data-name="Paragraph">
+              <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212220" style={{ fontVariationSettings: '"wdth" 100' }}>
+                к остатку по 5 статьям с отклонениями
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-node-id="3892:212221">
+            <div className="bg-[rgba(24,24,27,0.04)] content-stretch flex items-center p-[2px] relative rounded-[12px] shrink-0 w-full" data-node-id="3892:212222" data-name="Направление потока">
+              <div className="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.1),0px_0px_0px_rgba(0,0,0,0.06)] flex flex-[1_0_0] gap-[6px] h-[32px] items-center justify-center min-w-px relative rounded-[10px]" data-node-id="3892:212223" data-name="Radio Button">
+                <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#18181b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212224" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Расходы
+                </p>
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="3892:212225" data-name="Text">
+                  <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[16.5px] relative shrink-0 text-[#71717b] text-[11px] text-center tracking-[0.0165px] whitespace-nowrap" data-node-id="3892:212226" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    4
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] gap-[6px] h-[32px] items-center justify-center min-w-px relative rounded-[8px]" data-node-id="3892:212227" data-name="Radio Button">
+                <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#71717b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212228" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Поступления
+                </p>
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="3892:212229" data-name="Text">
+                  <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[16.5px] relative shrink-0 text-[#71717b] text-[11px] text-center tracking-[0.0165px] whitespace-nowrap" data-node-id="3892:212230" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212231" data-name="List">
+              <div className="border-[#e4e4e7] border-b border-solid content-stretch flex flex-col items-start pb-[12px] relative shrink-0 w-full" data-node-id="3892:212232" data-name="List Item">
+                <div className="content-stretch flex h-[44px] items-center justify-between min-h-[44px] relative rounded-[8px] shrink-0 w-full" data-node-id="3892:212233" data-name="Button">
+                  <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212234" data-name="Text">
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212235" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#18181b] text-[15px] tracking-[-0.2824px] whitespace-nowrap" data-node-id="3892:212236" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        Подрядчики
+                      </p>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212237" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#e7000b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212238" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        260 млн ₽ выше плана
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="3892:212239" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#e4e4e7] border-b border-solid content-stretch flex flex-col items-start py-[12px] relative shrink-0 w-full" data-node-id="3892:212241" data-name="List Item">
+                <div className="content-stretch flex h-[44px] items-center justify-between min-h-[44px] relative rounded-[8px] shrink-0 w-full" data-node-id="3892:212242" data-name="Button">
+                  <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212243" data-name="Text">
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212244" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#18181b] text-[15px] tracking-[-0.2824px] whitespace-nowrap" data-node-id="3892:212245" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        Налоги
+                      </p>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212246" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#e7000b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212247" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        85,0 млн ₽ выше плана
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="3892:212248" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#e4e4e7] border-b border-solid content-stretch flex flex-col items-start py-[12px] relative shrink-0 w-full" data-node-id="3892:212250" data-name="List Item">
+                <div className="content-stretch flex h-[44px] items-center justify-between min-h-[44px] relative rounded-[8px] shrink-0 w-full" data-node-id="3892:212251" data-name="Button">
+                  <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212252" data-name="Text">
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212253" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#18181b] text-[15px] tracking-[-0.2824px] whitespace-nowrap" data-node-id="3892:212254" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        Проценты по кредитам
+                      </p>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212255" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212256" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        58,0 млн ₽ ниже плана
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="3892:212257" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[12px] relative shrink-0 w-full" data-node-id="3892:212259" data-name="List Item">
+                <div className="content-stretch flex h-[44px] items-center justify-between min-h-[44px] relative rounded-[8px] shrink-0 w-full" data-node-id="3892:212260" data-name="Button">
+                  <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212261" data-name="Text">
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212262" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#18181b] text-[15px] tracking-[-0.2824px] whitespace-nowrap" data-node-id="3892:212263" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        Закупка материалов
+                      </p>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212264" data-name="Text">
+                      <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212265" style={{ fontVariationSettings: '"wdth" 100' }}>
+                        170 млн ₽ ниже плана
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="3892:212266" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

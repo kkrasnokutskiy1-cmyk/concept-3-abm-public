@@ -1,0 +1,149 @@
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212302" data-name="Section">
+      <div className="content-stretch flex items-end justify-between px-[20px] relative shrink-0 w-full" data-node-id="3892:212303" data-name="Header">
+        <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[20px] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212304" style={{ fontVariationSettings: '"wdth" 100' }}>
+          Движение денег
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start px-[8px] relative shrink-0 w-full" data-node-id="3892:212305">
+        <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip p-[20px] relative rounded-[24px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-full" data-node-id="3892:212306" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[24px]" />
+          <div className="bg-[rgba(24,24,27,0.04)] content-stretch flex items-center p-[2px] relative rounded-[12px] shrink-0 w-full" data-node-id="3892:212307" data-name="Направление потока">
+            <div className="content-stretch flex flex-[1_0_0] h-[32px] items-center justify-center min-w-px relative rounded-[8px]" data-node-id="3892:212308" data-name="Radio Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#71717b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212309" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Неделя
+              </p>
+            </div>
+            <div className="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.1),0px_0px_0px_rgba(0,0,0,0.06)] flex flex-[1_0_0] h-[32px] items-center justify-center min-w-px relative rounded-[10px]" data-node-id="3892:212310" data-name="Radio Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#18181b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212311" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Месяц
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] h-[32px] items-center justify-center min-w-px relative rounded-[8px]" data-node-id="3892:212312" data-name="Radio Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#71717b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212313" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Квартал
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] h-[32px] items-center justify-center min-w-px relative rounded-[8px]" data-node-id="3892:212314" data-name="Radio Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[19.5px] relative shrink-0 text-[#71717b] text-[13px] text-center tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212315" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Год
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="3892:212316" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212317" data-name="Paragraph">
+              <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212318" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Октябрь · чистый поток
+              </p>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex font-['SF_Pro:Medium'] font-[510] gap-[6px] items-baseline relative shrink-0 w-full whitespace-nowrap" data-node-id="3892:212319">
+              <p className="leading-[34px] relative shrink-0 text-[#18181b] text-[30px] tracking-[-0.3545px]" data-node-id="3892:212320" style={{ fontVariationSettings: '"wdth" 100' }}>
+                +1,12 млрд
+              </p>
+              <p className="leading-[17px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-1.1816px]" data-node-id="3892:212321" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ₽
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212322" data-name="Container">
+            <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="3892:212323" data-name="List - Движение денег, Октябрь, млрд ₽">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212324" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] h-[18px] leading-[18px] relative shrink-0 text-[#18181b] text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212325" data-name="Container">
+                  <p className="absolute left-0 top-0" data-node-id="3892:212326" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Остаток на начало
+                  </p>
+                  <p className="absolute left-[285.65px] top-0" data-node-id="3892:212327" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    11,72
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212328" data-name="Container">
+                  <div className="absolute bg-[#3f3f47] h-[6px] left-0 rounded-[16777200px] top-0 w-[206.969px]" data-node-id="3892:212329" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212330" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal h-[18px] leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212331" data-name="Container">
+                  <p className="absolute left-0 text-[#71717b] top-0" data-node-id="3892:212332" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Операционные поступления
+                  </p>
+                  <p className="absolute left-[286.97px] text-[#18181b] top-0" data-node-id="3892:212333" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    +6,40
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212334" data-name="Container">
+                  <div className="absolute bg-[#18181b] h-[6px] left-[206.97px] rounded-[16777200px] top-0 w-[113.023px]" data-node-id="3892:212335" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212336" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal h-[18px] leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212337" data-name="Container">
+                  <p className="absolute left-0 text-[#71717b] top-0" data-node-id="3892:212338" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Операционные платежи
+                  </p>
+                  <p className="absolute left-[287.46px] text-[#18181b] top-0" data-node-id="3892:212339" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    −5,10
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212340" data-name="Container">
+                  <div className="absolute bg-[#9f9fa9] h-[6px] left-[229.93px] rounded-[16777200px] top-0 w-[90.063px]" data-node-id="3892:212341" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212342" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal h-[18px] leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212343" data-name="Container">
+                  <p className="absolute left-0 text-[#71717b] top-0" data-node-id="3892:212344" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Инвестиции, сальдо
+                  </p>
+                  <p className="absolute left-[287.46px] text-[#18181b] top-0" data-node-id="3892:212345" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    −0,90
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212346" data-name="Container">
+                  <div className="absolute bg-[#9f9fa9] h-[6px] left-[214.04px] rounded-[16777200px] top-0 w-[15.891px]" data-node-id="3892:212347" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212348" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal h-[18px] leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212349" data-name="Container">
+                  <p className="absolute left-0 text-[#71717b] top-0" data-node-id="3892:212350" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Финансовые поступления
+                  </p>
+                  <p className="absolute left-[286.97px] text-[#18181b] top-0" data-node-id="3892:212351" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    +1,20
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212352" data-name="Container">
+                  <div className="absolute bg-[#18181b] h-[6px] left-[214.04px] rounded-[16777200px] top-0 w-[21.188px]" data-node-id="3892:212353" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212354" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal h-[18px] leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212355" data-name="Container">
+                  <p className="absolute left-0 text-[#71717b] top-0" data-node-id="3892:212356" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Финансовые платежи
+                  </p>
+                  <p className="absolute left-[287.46px] text-[#18181b] top-0" data-node-id="3892:212357" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    −0,48
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212358" data-name="Container">
+                  <div className="absolute bg-[#9f9fa9] h-[6px] left-[226.75px] rounded-[16777200px] top-0 w-[8.477px]" data-node-id="3892:212359" data-name="Container" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="3892:212360" data-name="List Item">
+                <div className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] h-[18px] leading-[18px] relative shrink-0 text-[#18181b] text-[13px] tracking-[-0.1242px] w-[320px] whitespace-nowrap" data-node-id="3892:212361" data-name="Container">
+                  <p className="absolute left-0 top-0" data-node-id="3892:212362" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Остаток на конец
+                  </p>
+                  <p className="absolute left-[285.65px] top-0" data-node-id="3892:212363" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    12,84
+                  </p>
+                </div>
+                <div className="bg-[#f0f0f1] h-[6px] relative rounded-[16777200px] shrink-0 w-[320px]" data-node-id="3892:212364" data-name="Container">
+                  <div className="absolute bg-[#3f3f47] h-[6px] left-0 rounded-[16777200px] top-0 w-[226.75px]" data-node-id="3892:212365" data-name="Container" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

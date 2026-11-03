@@ -1,0 +1,30 @@
+/* Глобальные стили прежнего прототипа (/?version=prev). Подключаются только из LegacyApp. */
+body[data-version='prev'] {
+  min-width: 320px;
+  background: #d8d8dc;
+  color: var(--color-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Arial, sans-serif;
+  font-size: initial;
+  line-height: normal;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+}
+
+body[data-version='prev'] input,
+body[data-version='prev'] textarea,
+body[data-version='prev'] select {
+  color: inherit;
+  font: inherit;
+}
+
+body[data-version='prev'] button:focus-visible,
+body[data-version='prev'] [tabindex]:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-violet) 72%, white);
+  outline-offset: 2px;
+}
+
+body[data-version='prev'] button {
+  color: inherit;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,91 @@
+/* «Деньги на дату» — Figma 3930:213306. Значения — из get_design_context. */
+
+/* Container 3930:213311: кнопки 44×44 (radius 8, прозрачная обводка 1px) и дата по центру */
+.cod-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cod-nav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: var(--fx-stroke) solid transparent;
+  border-radius: var(--fx-space-xs);
+  background: none;
+  cursor: pointer;
+  transition: opacity var(--fx-dur-fast) var(--fx-ease-out);
+}
+.cod-nav__btn--end {
+  justify-content: flex-end;
+}
+.cod-nav__btn img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.cod-nav__btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.cod-nav__btn:focus-visible {
+  outline: 2px solid var(--fx-grape-soda);
+  outline-offset: 2px;
+}
+.cod-nav__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 53.5px;
+  height: 44px;
+  margin: 0;
+  font: var(--fx-weight-semibold) 17px/normal var(--fx-font-display);
+  letter-spacing: -0.4796px;
+  color: var(--fx-text-primary);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* График + зона Range Slider (h40) + подписи: тянется по горизонтали, вертикальная прокрутка сохраняется */
+.cod-plot {
+  touch-action: pan-y;
+  cursor: ew-resize;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Бегунок и заливка — #171719 (узел 3930:213342) */
+.cod-slider {
+  --cod-ink: #171719;
+  cursor: ew-resize;
+}
+.cod-slider .slider__fill,
+.cod-slider .slider__thumb {
+  background: var(--cod-ink);
+}
+
+/* Точка P10 без дефицита: геометрия ассета 3892-211954 (Ø10 + белая обводка 2.13), цвет линии P10 */
+.cod-dot {
+  position: absolute;
+  inset: 0;
+  border: 2.1333px solid var(--fx-surface);
+  border-radius: 50%;
+  background: var(--fx-text-muted);
+  box-sizing: content-box;
+  margin: -2.1333px;
+}
+
+/* Дефицит выделяется красным с заливкой 4%; запас сохраняет нейтральный фон. */
+.cod-gap {
+  background: var(--fx-fill-subtle);
+}
+.cod-gap--deficit {
+  background: var(--fx-negative-soft);
+  color: var(--fx-negative);
+}
+.cod-gap--deficit > p {
+  color: inherit;
+}

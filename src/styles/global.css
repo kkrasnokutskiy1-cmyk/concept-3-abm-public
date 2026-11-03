@@ -1,0 +1,209 @@
+/*
+ * Глобальная раскладка экрана «Main-full» (Figma 3892:211565, 393×8804).
+ * Верхнеуровневые блоки идут колонкой с шагом 10px (y: 0 → 108 → 182 → 600 → …),
+ * фон-подложка 393×430 лежит под шапкой и hero, нижняя панель (Progressive Blur
+ * + таб-бар, 393×114) зафиксирована у низа экрана и рендерится самим BottomBar.
+ *
+ * Сбросы элементов ограничены корнем нового экрана через :where(.app) — нулевая
+ * специфичность, и они не задевают прежний прототип (/?version=prev, LegacyApp).
+ */
+:root {
+  --app-max-width: 430px;
+  --app-stack-gap: 10px;
+  --app-top-bg-height: 430px;
+  /* 8804 (высота фрейма) − 8710 (низ последней секции) */
+  --app-bottom-inset: 94px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Псевдоэлементы — только в новом экране: прежний прототип рисует ими иконки с content-box */
+:where(.app) *::before,
+:where(.app) *::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: var(--fx-bg);
+  color: var(--fx-text-primary);
+  font-family: var(--fx-font);
+  font-size: var(--fx-text-13);
+  line-height: var(--fx-lh-13);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+:where(.app) :where(h1, h2, h3, h4, p, ul, ol, figure) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(.app) :where(ul, ol) {
+  list-style: none;
+}
+
+:where(.app) button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+:where(.app) :where(img, svg) {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  max-width: var(--app-max-width);
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--fx-bg);
+  /* Star-свечение шапки выходит за пределы экрана по x */
+  overflow-x: clip;
+  isolation: isolate;
+}
+
+/*
+ * Белый → --fx-bg (Figma 3958:214254), закреплён за экраном, а не за страницей:
+ * при любой прокрутке сверху остаётся белый. position: fixed вместо
+ * background-attachment: fixed — последний iOS Safari игнорирует. На десктопе
+ * containing block — .phone-frame (transform), поэтому слой стоит на месте и при
+ * прокрутке внутри .app. z-index −1 внутри isolation .app: поверх подложки, под контентом.
+ */
+.app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 100%;
+  max-width: var(--app-max-width);
+  height: 100lvh;
+  transform: translateX(-50%);
+  background: var(--fx-bg-gradient);
+  pointer-events: none;
+}
+
+.app__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--app-stack-gap);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: calc(var(--app-bottom-inset) + env(safe-area-inset-bottom, 0px));
+}
+
+/*
+ * Корпус телефона на широком экране: экран 393×852 (iPhone 15/16, ширина фрейма
+ * Figma), прокрутка — внутри .app. transform делает рамку containing block для
+ * position: fixed, поэтому нижняя панель остаётся у низа экрана телефона, а не окна.
+ * На мобильном (< 600px) обёртка ничего не меняет — прокручивается окно.
+ */
+@media (min-width: 600px) {
+  :root {
+    --phone-screen-height: 852px;
+    --phone-bezel: 12px;
+    --phone-radius: 55px;
+  }
+
+  body {
+    background: var(--fx-border);
+  }
+
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: var(--fx-space-l) 0;
+  }
+
+  .phone-frame {
+    position: relative;
+    flex: none;
+    width: calc(var(--fx-screen-width) + 2 * var(--phone-bezel));
+    /* Низкое окно: экран укорачивается, чтобы корпус целиком помещался */
+    height: min(
+      calc(var(--phone-screen-height) + 2 * var(--phone-bezel)),
+      calc(100dvh - 2 * var(--fx-space-l))
+    );
+    border: var(--phone-bezel) solid var(--fx-text-primary);
+    border-radius: calc(var(--phone-radius) + var(--phone-bezel));
+    background: var(--fx-bg);
+    overflow: hidden;
+    transform: translateZ(0);
+    box-shadow:
+      0 0 0 1px var(--fx-chart-total),
+      0 24px 64px rgba(24, 24, 27, 0.18);
+  }
+
+  .phone-frame > .app {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+  }
+
+  /* Слой лежит на .phone-frame мимо скругляющего клипа .app — скругляем сам */
+  .phone-frame > .app::before {
+    left: 0;
+    max-width: none;
+    height: 100%;
+    transform: none;
+    border-radius: var(--phone-radius);
+  }
+
+  .phone-frame > .app::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

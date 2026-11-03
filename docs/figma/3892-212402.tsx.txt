@@ -1,0 +1,187 @@
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212402" data-name="Section">
+      <div className="content-stretch flex items-end justify-between px-[20px] relative shrink-0 w-full" data-node-id="3892:212403" data-name="Header">
+        <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[20px] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212404" style={{ fontVariationSettings: '"wdth" 100' }}>
+          Контрагенты
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center px-[8px] relative shrink-0 w-full" data-node-id="3892:212405">
+        <div className="content-stretch flex flex-col items-start overflow-clip p-[20px] relative rounded-[20px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-[332px]" data-node-id="3892:212406" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[20px]" />
+          <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-node-id="3892:212407" data-name="Container">
+            <div className="content-stretch flex gap-[16px] items-start relative shrink-0 w-full" data-node-id="3892:212408" data-name="Container">
+              <div className="bg-[#f0f0f1] content-stretch flex items-center justify-center relative rounded-[14px] shrink-0 size-[48px]" data-node-id="3892:212409" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[25.5px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212410" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  ТВ
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0" data-node-id="3892:212411" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212412" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[23px] relative shrink-0 text-[#18181b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212413" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    ООО «Терминал Восток»
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212414" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212415" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    ИНН 2540118734
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="3892:212416" data-name="Container">
+              <div className="bg-[#e7000b] relative rounded-[16777200px] shadow-[0px_0px_0px_2.5px_rgba(231,0,11,0.15)] shrink-0 size-[6px]" data-node-id="3892:212417" data-name="Image - риск" />
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="3892:212418" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#18181b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212419" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Риск растёт · два новых иска
+                </p>
+              </div>
+            </div>
+            <div className="border-[#e4e4e7] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_50px] py-[16px] relative shrink-0 w-full" data-node-id="3892:212420" data-name="Container">
+              <div className="col-1 content-stretch flex flex-col gap-[8px] items-start justify-self-stretch relative row-1 self-stretch shrink-0" data-node-id="3892:212421" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212422" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212423" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Сумма исков
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212424" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[24px] relative shrink-0 text-[#18181b] text-[20px] tracking-[-0.4972px] whitespace-nowrap" data-node-id="3892:212425" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    340 млн ₽
+                  </p>
+                </div>
+              </div>
+              <div className="border-[#e4e4e7] border-l border-solid col-2 content-stretch flex flex-col gap-[8px] items-start justify-self-stretch pl-[16px] relative row-1 self-stretch shrink-0" data-node-id="3892:212426" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212427" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212428" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Доля притока
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212429" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[24px] relative shrink-0 text-[#18181b] text-[20px] tracking-[-0.4972px] whitespace-nowrap" data-node-id="3892:212430" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    18%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="3892:212431" data-name="Container">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212432" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212433" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212434" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Поступления за октябрь
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212435" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212436" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    79,0 млн ₽
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[40px] items-end relative shrink-0" data-node-id="3892:212437" data-name="Text">
+                <div className="bg-[#d4d4d8] h-[29.313px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212438" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[36.023px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212439" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[25.648px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212440" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[30.836px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212441" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[37.25px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212442" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[35.719px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212443" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[40px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212444" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[38.469px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212445" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[33.281px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212446" data-name="Text" />
+                <div className="bg-[#18181b] h-[29.922px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212447" data-name="Text" />
+                <div className="bg-[#18181b] h-[26.563px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212448" data-name="Text" />
+                <div className="bg-[#18181b] h-[24.117px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212449" data-name="Text" />
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+        <div className="content-stretch flex flex-col items-start overflow-clip p-[20px] relative rounded-[20px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-[332px]" data-node-id="3892:212450" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[20px]" />
+          <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-node-id="3892:212451" data-name="Container">
+            <div className="content-stretch flex gap-[16px] items-start relative shrink-0 w-full" data-node-id="3892:212452" data-name="Container">
+              <div className="bg-[#f0f0f1] content-stretch flex items-center justify-center relative rounded-[14px] shrink-0 size-[48px]" data-node-id="3892:212453" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[25.5px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212454" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  ТВ
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0" data-node-id="3892:212455" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212456" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[23px] relative shrink-0 text-[#18181b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212457" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    ООО «Терминал Восток»
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212458" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212459" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    ИНН 2540118734
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="3892:212460" data-name="Container">
+              <div className="bg-[#e7000b] relative rounded-[16777200px] shadow-[0px_0px_0px_2.5px_rgba(231,0,11,0.15)] shrink-0 size-[6px]" data-node-id="3892:212461" data-name="Image - риск" />
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="3892:212462" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#18181b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212463" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Риск растёт · два новых иска
+                </p>
+              </div>
+            </div>
+            <div className="border-[#e4e4e7] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_50px] py-[16px] relative shrink-0 w-full" data-node-id="3892:212464" data-name="Container">
+              <div className="col-1 content-stretch flex flex-col gap-[8px] items-start justify-self-stretch relative row-1 self-stretch shrink-0" data-node-id="3892:212465" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212466" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212467" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Сумма исков
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212468" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[24px] relative shrink-0 text-[#18181b] text-[20px] tracking-[-0.4972px] whitespace-nowrap" data-node-id="3892:212469" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    340 млн ₽
+                  </p>
+                </div>
+              </div>
+              <div className="border-[#e4e4e7] border-l border-solid col-2 content-stretch flex flex-col gap-[8px] items-start justify-self-stretch pl-[16px] relative row-1 self-stretch shrink-0" data-node-id="3892:212470" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212471" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212472" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Доля притока
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212473" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[24px] relative shrink-0 text-[#18181b] text-[20px] tracking-[-0.4972px] whitespace-nowrap" data-node-id="3892:212474" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    18%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="3892:212475" data-name="Container">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="3892:212476" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212477" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212478" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Поступления за октябрь
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212479" data-name="Paragraph">
+                  <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[17px] tracking-[-0.4796px] whitespace-nowrap" data-node-id="3892:212480" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    79,0 млн ₽
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[40px] items-end relative shrink-0" data-node-id="3892:212481" data-name="Text">
+                <div className="bg-[#d4d4d8] h-[29.313px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212482" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[36.023px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212483" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[25.648px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212484" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[30.836px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212485" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[37.25px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212486" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[35.719px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212487" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[40px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212488" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[38.469px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212489" data-name="Text" />
+                <div className="bg-[#d4d4d8] h-[33.281px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212490" data-name="Text" />
+                <div className="bg-[#18181b] h-[29.922px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212491" data-name="Text" />
+                <div className="bg-[#18181b] h-[26.563px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212492" data-name="Text" />
+                <div className="bg-[#18181b] h-[24.117px] relative rounded-tl-[4px] rounded-tr-[4px] shrink-0 w-[4px]" data-node-id="3892:212493" data-name="Text" />
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

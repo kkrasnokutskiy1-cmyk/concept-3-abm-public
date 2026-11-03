@@ -1,0 +1,292 @@
+/* Общие примитивы экрана. Значения — из Figma (Section / Header / glass-карточки). */
+
+/* Стеклянная поверхность: радиальный градиент 0.4 → 0.8 → 0.4 белого, тень и внутренний блик */
+.fx-glass {
+  position: relative;
+  isolation: auto;
+  background: radial-gradient(
+    ellipse 60% 110% at 45% 40%,
+    var(--fx-glass-stop-edge) 0%,
+    var(--fx-glass-stop-mid) 49.589%,
+    var(--fx-glass-stop-edge) 100%
+  );
+  box-shadow: var(--fx-shadow-glass);
+}
+.fx-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: var(--fx-shadow-glass-inset);
+  pointer-events: none;
+}
+
+/* Отдельная поверхность ответов ИИ: fill, оптика и Star — разные слои.
+   Фильтр на псевдоэлементе не изолирует plus-lighter у соседнего Star.
+   Текст остаётся резким; исходный inset-блик рисуется поверх через ::after. */
+.fx-ai-glass { background: none; }
+.fx-ai-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--fx-ai-glass-fill), var(--fx-ai-glass-optical-tone);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(var(--fx-ai-glass-backdrop-blur));
+  backdrop-filter: blur(var(--fx-ai-glass-backdrop-blur));
+  pointer-events: none;
+}
+.fx-ai-glass > :not(.fx-star):not(.lower-glow-anchor) { position: relative; }
+
+.fx-card {
+  border-radius: var(--fx-radius-card);
+  padding: var(--fx-space-l);
+  overflow: clip;
+}
+
+/* Section: py 16, gap 16 */
+.fx-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--fx-space-m);
+  padding: var(--fx-space-m) 0;
+}
+.fx-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fx-space-xs);
+  min-height: 24px;
+  padding: 0 var(--fx-space-l);
+}
+.fx-section__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-xs);
+  min-width: 0;
+}
+.fx-section__title {
+  margin: 0;
+  font: var(--fx-weight-medium) 20px/22px var(--fx-font-display);
+  letter-spacing: -0.6866px;
+  color: var(--fx-text-primary);
+  white-space: nowrap;
+  text-wrap: balance;
+}
+.fx-section__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+.fx-section__icon img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.fx-section__body {
+  padding: 0 var(--fx-gutter);
+}
+
+/* Счётчик в заголовке (красный бейдж) */
+.fx-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-badge-bg);
+  color: var(--fx-static-neutral-0);
+  font: var(--fx-weight-medium) 12px/18px var(--fx-font);
+  letter-spacing: -0.048px;
+}
+
+/* Типографика */
+.fx-caption {
+  margin: 0;
+  font: var(--fx-weight-regular) 13px/18px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-muted);
+}
+.fx-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--fx-font-display);
+  font-weight: var(--fx-weight-medium);
+}
+.fx-amount__value {
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: -0.3545px;
+  color: var(--fx-text-primary);
+}
+.fx-amount__currency {
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: -1.1816px;
+  color: var(--fx-text-muted);
+}
+
+/* Кнопки 44px */
+.fx-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 44px;
+  padding: 0 10px;
+  border: var(--fx-stroke) solid transparent;
+  border-radius: 12px;
+  font: var(--fx-weight-medium) 14px/20px var(--fx-font);
+  letter-spacing: -0.1984px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform var(--fx-dur-press) var(--fx-ease-out), background-color var(--fx-dur-fast) var(--fx-ease-out);
+}
+.fx-btn:active {
+  transform: scale(0.97);
+}
+.fx-btn--primary {
+  background: var(--fx-btn-primary-bg);
+  color: var(--fx-btn-primary-text);
+}
+.fx-btn--secondary {
+  background: var(--fx-btn-secondary-bg);
+  color: var(--fx-text-primary);
+}
+.fx-btn:focus-visible {
+  outline: 2px solid var(--fx-grape-soda);
+  outline-offset: 2px;
+}
+
+/* Вариант отступов нижних секций Figma: pt 12, pb 24 */
+.fx-section--loose {
+  padding: 12px 0 24px;
+}
+
+/* Градиентный текст «Альфа-Интеллект» */
+.fx-ai-text {
+  background-image: var(--fx-gradient-ai);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Белая карточка (у части секций фон #fff вместо стекла) */
+.fx-solid {
+  position: relative;
+  isolation: auto;
+  background: var(--fx-surface);
+  box-shadow: var(--fx-shadow-glass);
+}
+.fx-solid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: var(--fx-shadow-glass-inset);
+  pointer-events: none;
+}
+
+/* Вложенная стеклянная плашка radius 16, padding 16 */
+.fx-inset {
+  border-radius: 16px;
+  padding: var(--fx-space-m);
+}
+
+/* Icon 28 — знак нейропомощника */
+.fx-ai-mark {
+  position: relative;
+  display: flex;
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+.fx-ai-mark__icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.fx-ai-mark__shadow {
+  position: absolute;
+  left: calc(50% + 1.43px);
+  top: calc(50% + 1.43px);
+  width: 31.429px;
+  height: 31.429px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.fx-ai-mark__shadow img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+/* Подпись «Альфа-Интеллект» 13/19.5 */
+.fx-ai-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fx-ai-label__text {
+  font: var(--fx-weight-medium) 13px/19.5px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  white-space: nowrap;
+}
+
+/* Star — декоративное свечение */
+.fx-star {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+}
+.fx-star__rotate {
+  flex: none;
+  transform: rotate(-78.79deg);
+}
+.fx-star__layer {
+  position: relative;
+  opacity: 0.7;
+}
+.fx-star__layer img {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+/*
+ * Перелив двигает исходное растровое свечение, сохраняя палитру и размытие.
+ * --fx-star-phase разводит соседние Star; вне экрана и в скрытой вкладке цикл
+ * приостанавливается. Только transform / opacity, без фильтра на большом PNG.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  /* Исключение для перелива на белой поверхности: plus-lighter полностью
+     выбеливает PNG. Слабый normal сохраняет его цвет; текст рисуется выше.
+     Статичный режим и шапка сохраняют исходную композицию Figma. */
+  .fx-ai-glass .fx-star { mix-blend-mode: normal; opacity: 0.2; }
+  .fx-ai-glass > :not(.fx-star):not(.lower-glow-anchor) { z-index: 1; }
+  .fx-star__layer {
+    animation: fx-star-drift var(--fx-dur-star-shimmer) var(--fx-ease-in-out) var(--fx-star-phase, 0s) infinite alternate;
+    animation-play-state: paused;
+  }
+  .fx-star[data-animate='true'] .fx-star__layer { animation-play-state: running; }
+}
+@keyframes fx-star-drift {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 0.62; }
+  50% { transform: translate(-6%, 8%) rotate(4deg) scale(1.06); opacity: 0.82; }
+  100% { transform: translate(3%, -3%) rotate(-2deg) scale(0.98); opacity: 0.68; }
+}
+
+.fx-section__subtitle {
+  white-space: nowrap;
+}

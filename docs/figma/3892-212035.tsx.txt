@@ -1,0 +1,102 @@
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212035" data-name="Section">
+      <div className="content-stretch flex items-end justify-between px-[20px] relative shrink-0 w-full" data-node-id="3892:212036" data-name="Header">
+        <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[20px] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212037" style={{ fontVariationSettings: '"wdth" 100' }}>
+          Выгода месяца
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start px-[8px] relative shrink-0 w-full" data-node-id="3892:212038">
+        <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip p-[20px] relative rounded-[20px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-full" data-node-id="3892:212039" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[20px]" />
+          <div className="gap-x-[12px] gap-y-[12px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_72px] relative shrink-0 w-full" data-node-id="3892:212040" data-name="Container">
+            <div className="col-1 content-stretch flex flex-col gap-[2px] items-start justify-self-stretch relative row-1 self-stretch shrink-0" data-node-id="3892:212041" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212042" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212043" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Получено за октябрь
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212044" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[32px] relative shrink-0 text-[#18181b] text-[28px] tracking-[-0.3172px] whitespace-nowrap" data-node-id="3892:212045" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  6,8 млн
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212046" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212047" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  62% возможной
+                </p>
+              </div>
+            </div>
+            <div className="border-[#e4e4e7] border-l border-solid col-2 content-stretch flex flex-col gap-[2px] items-start justify-self-stretch pl-[12px] relative row-1 self-stretch shrink-0" data-node-id="3892:212048" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212049" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212050" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Ещё можно
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212051" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[32px] relative shrink-0 text-[#71717b] text-[28px] tracking-[-0.3172px] whitespace-nowrap" data-node-id="3892:212052" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  4,2 млн
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212053" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212054" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  до конца месяца
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="3892:212055" data-name="Container">
+            <div className="gap-x-[4px] gap-y-[4px] grid grid-cols-[repeat(11,minmax(0,1fr))] grid-rows-[_28px] relative shrink-0 w-full" data-node-id="3892:212056" data-name="Container">
+              <div className="bg-[#f0f0f1] col-1 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212057" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212058" data-name="Text" />
+              </div>
+              <div className="bg-[#f0f0f1] col-2 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212059" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212060" data-name="Text" />
+              </div>
+              <div className="bg-[#f0f0f1] col-3 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212061" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212062" data-name="Text" />
+              </div>
+              <div className="bg-[#f0f0f1] col-4 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212063" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212064" data-name="Text" />
+              </div>
+              <div className="bg-[#f0f0f1] col-5 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212065" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212066" data-name="Text" />
+              </div>
+              <div className="bg-[#f0f0f1] col-6 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212067" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-full" data-node-id="3892:212068" data-name="Text" />
+              </div>
+              <div className="bg-[rgba(24,24,27,0.04)] col-7 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212069" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-[20.359px]" data-node-id="3892:212070" data-name="Text" />
+              </div>
+              <div className="bg-[rgba(24,24,27,0.04)] col-8 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212071" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-0" data-node-id="3892:212072" data-name="Text" />
+              </div>
+              <div className="bg-[rgba(24,24,27,0.04)] col-9 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212073" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-0" data-node-id="3892:212074" data-name="Text" />
+              </div>
+              <div className="bg-[rgba(24,24,27,0.04)] col-10 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212075" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-0" data-node-id="3892:212076" data-name="Text" />
+              </div>
+              <div className="bg-[rgba(24,24,27,0.04)] col-11 content-stretch flex flex-col h-[28px] items-start justify-self-stretch overflow-clip relative rounded-[6px] row-1 self-start shrink-0" data-node-id="3892:212077" data-name="Text">
+                <div className="bg-[#18181b] h-[28px] relative shrink-0 w-0" data-node-id="3892:212078" data-name="Text" />
+              </div>
+            </div>
+            <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="3892:212079" data-name="Paragraph">
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="3892:212080" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[14px] relative shrink-0 text-[#71717b] text-[11px] tracking-[0.0165px] whitespace-nowrap" data-node-id="3892:212081" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  1 ячейка — 1 млн ₽
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="3892:212082" data-name="Text">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[14px] relative shrink-0 text-[#71717b] text-[11px] tracking-[0.0165px] whitespace-nowrap" data-node-id="3892:212083" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  из 11,0 млн ₽
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

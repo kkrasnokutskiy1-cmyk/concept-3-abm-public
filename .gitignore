@@ -1,0 +1,22 @@
+# Создан VibeForge при включении контроля версий — правьте как угодно.
+node_modules/
+dist/
+build/
+.next/
+target/
+.venv/
+venv/
+__pycache__/
+.gradle/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
+*.tsbuildinfo
+.playwright-browsers/
+playwright-report/
+test-results/
+.vercel
+.env*

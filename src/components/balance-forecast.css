@@ -1,0 +1,98 @@
+/* «Прогноз остатка» — Figma 3930:213362. Значения — из get_design_context. */
+
+/* Card 3930:213366: pt 20, px 20, pb 16, gap 16 */
+.balance {
+  gap: var(--fx-space-m);
+  padding: var(--fx-space-l) var(--fx-space-l) var(--fx-space-m);
+}
+.balance__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xs);
+  height: 60px;
+}
+.balance__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-s);
+}
+.balance__plot {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xxs);
+}
+
+/* Подписи областей: «Факт» с x 4, «Прогноз» над линией сегодня (129 / 337) */
+.balance__legend {
+  position: relative;
+  height: 14px;
+  font: var(--fx-weight-regular) 11px/14px var(--fx-font);
+  letter-spacing: 0.0165px;
+  color: var(--fx-text-muted);
+  white-space: nowrap;
+}
+.balance__legend > span {
+  position: absolute;
+  top: 0;
+}
+.balance__legend-fact {
+  left: var(--fx-space-xxs);
+}
+.balance__legend-forecast {
+  left: 38.28%;
+}
+
+.balance__chart {
+  position: relative;
+  height: 160px;
+  overflow: clip;
+}
+/* Подписи оси (Inter Regular 11, #666) — текстовые слои внутри графика */
+.balance__tick,
+.balance__min {
+  position: absolute;
+  font: 400 11px/normal Inter, var(--fx-font);
+  white-space: nowrap;
+}
+.balance__tick {
+  color: var(--fx-chart-axis);
+  text-align: center;
+}
+.balance__min {
+  inset: 51.56% 76.56% 40.31% 2.81%;
+  color: var(--fx-text-muted);
+}
+
+.balance__note {
+  margin: 0;
+}
+.balance__breach {
+  color: var(--fx-negative);
+}
+.balance__breach b {
+  font-weight: var(--fx-weight-medium);
+}
+
+/* Footer 3930:213415: pt 2, gap 12; кнопка h44, radius 12, 13/18.571 */
+.balance__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-s);
+  padding-top: var(--fx-space-xxxs);
+}
+.balance__more {
+  flex: none;
+  width: 100%;
+  font-size: 13px;
+  line-height: 18.571px;
+  letter-spacing: var(--fx-tracking-13);
+}
+.balance__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xs);
+}
+.balance__em {
+  color: var(--fx-text-primary);
+  white-space: nowrap;
+}

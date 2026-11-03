@@ -1,0 +1,16 @@
+.git
+.playwright-browsers
+.vibeforge
+node_modules
+dist
+test-results
+test-results-*
+playwright-report
+docs
+tests
+c-preview.html
+tmp-*
+*.tsbuildinfo
+.env*
+
+test-results-stack-b

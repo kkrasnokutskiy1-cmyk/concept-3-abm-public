@@ -1,0 +1,245 @@
+/* «Мир вокруг вас» — Figma 3930:213032. Значения — из get_design_context / use_figma (fills). */
+
+.world {
+  gap: var(--fx-space-m);
+}
+
+/* Container 3930:213037: итог слева, счёт «против · за» справа, по нижнему краю */
+.world__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--fx-space-s);
+}
+/* 3930:213038: надзаголовок → сумма gap 8; строка суммы 3953:214241 — baseline, gap 6 */
+.world__total {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xs);
+}
+.world__amount {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--fx-font-display);
+  font-weight: var(--fx-weight-medium);
+}
+.world__amount-value {
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: -0.3545px;
+  color: var(--fx-text-primary);
+}
+.world__amount-currency {
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: -1.1816px;
+  color: var(--fx-text-muted);
+}
+.world__score {
+  padding-bottom: var(--fx-space-xxs);
+  text-align: right;
+  white-space: nowrap;
+}
+.world__score-num,
+.world__em {
+  color: var(--fx-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.world__score-num--for {
+  color: var(--fx-positive);
+}
+
+/* List 3930:213047: строки 36 px, сетка 92 / 1fr / 56, gap 8, px 8, radius 8 */
+.world__list {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.world__row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) 56px;
+  align-items: center;
+  gap: var(--fx-space-xs);
+  width: 100%;
+  min-height: 36px;
+  padding: 0 var(--fx-space-xs);
+  border: 0;
+  border-radius: var(--fx-space-xs);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--fx-dur-fast) var(--fx-ease-out);
+}
+.world__row--on {
+  background: var(--fx-fill-subtle);
+}
+.world__row:focus-visible {
+  outline: 2px solid var(--fx-grape-soda);
+  outline-offset: -2px;
+}
+.world__topic {
+  overflow: hidden;
+  font: var(--fx-weight-regular) 13px/18px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-muted);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.world__row--on .world__topic {
+  font-weight: var(--fx-weight-medium);
+  color: var(--fx-text-primary);
+}
+.world__scale {
+  position: relative;
+  height: 8px;
+}
+.world__zero {
+  position: absolute;
+  top: -4px;
+  width: 1px;
+  height: 16px;
+  background: var(--fx-border);
+}
+.world__bar {
+  position: absolute;
+  top: 0;
+  height: 8px;
+  overflow: hidden;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-chart-outflow);
+  transition: background-color var(--fx-dur-fast) var(--fx-ease-out);
+}
+.world__bar--on {
+  background: var(--fx-text-primary);
+}
+.world__bar--for {
+  background: var(--fx-positive);
+}
+/* Активный столбец: второй fill — PATTERN 3930:212851, opacity 20%, масштаб 0.75 (11×34 → 8.25×25.5) */
+.world__bar--active::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/assets/figma/3930-212851-bar-pattern.svg') 0 0 / 8.25px 25.5px repeat;
+  opacity: 0.2;
+}
+.world__value {
+  font: var(--fx-weight-medium) 13px/18px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-primary);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.world__value--for {
+  color: var(--fx-positive);
+}
+
+/* Карточка события 3930:213093: fill rgba(24,24,27,.04), px 16, py 12, radius 16, gap 8 */
+.world__event {
+  padding: var(--fx-space-s) var(--fx-space-m);
+  border-radius: 16px;
+  background: var(--fx-fill-subtle);
+  touch-action: pan-y;
+}
+.world__event-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fx-space-xs);
+}
+.world__event-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.world__tag {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  overflow: clip;
+  border-radius: var(--fx-radius-pill);
+  background: var(--fx-surface);
+  font: var(--fx-weight-medium) 13px/16px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-primary);
+  white-space: nowrap;
+}
+.world__pager {
+  display: flex;
+  align-items: center;
+  gap: var(--fx-space-xxs);
+}
+.world__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--fx-radius-pill);
+  background: transparent;
+  cursor: pointer;
+}
+.world__nav img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.world__nav:focus-visible,
+.world__action:focus-visible {
+  outline: 2px solid var(--fx-grape-soda);
+  outline-offset: 0;
+}
+.world__count {
+  font: var(--fx-weight-regular) 11px/14px var(--fx-font);
+  letter-spacing: 0.0165px;
+  color: var(--fx-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.world__text {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* Действия 3930:213110: h32, контейнер сдвинут на −8 px, gap 8 */
+.world__actions {
+  display: flex;
+  gap: var(--fx-space-xs);
+  height: 32px;
+  margin: 0 calc(-1 * var(--fx-space-xs));
+}
+.world__action {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 var(--fx-space-xs);
+  border: 0;
+  border-radius: var(--fx-space-xs);
+  background: transparent;
+  font: var(--fx-weight-medium) 13px/19.5px var(--fx-font);
+  letter-spacing: var(--fx-tracking-13);
+  color: var(--fx-text-primary);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.world__action:disabled {
+  cursor: default;
+}
+.world__done {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 32px;
+}
+.world__done .world__action {
+  margin-right: calc(-1 * var(--fx-space-xs));
+}

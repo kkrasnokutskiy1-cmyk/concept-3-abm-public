@@ -1,0 +1,107 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/78e1fe9b-2662-46fe-b9e1-375353a88829";
+const imgStar24 = `${assetPathPrefix}/23d27.png`;
+const imgStar23 = `${assetPathPrefix}/e4f8c.png`;
+
+export default function Section() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-center pb-[24px] pt-[12px] relative size-full" data-node-id="3892:212366" data-name="Section">
+      <div className="content-stretch flex items-end justify-between px-[20px] relative shrink-0 w-full" data-node-id="3892:212367" data-name="Header">
+        <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[22px] relative shrink-0 text-[#18181b] text-[20px] text-balance tracking-[-0.6866px] whitespace-nowrap" data-node-id="3892:212368" style={{ fontVariationSettings: '"wdth" 100' }}>
+          Влияние ставки ЦБ
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start px-[8px] relative shrink-0 w-full" data-node-id="3892:212369">
+        <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip p-[20px] relative rounded-[20px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-full" data-node-id="3892:212370" data-name="Section">
+          <div aria-hidden className="absolute bg-white inset-0 pointer-events-none rounded-[20px]" />
+          <div className="absolute flex h-[650.13px] items-center justify-center mix-blend-plus-lighter right-[64.08px] top-[-347.69px] w-[700.103px]" data-node-id="3892:212371">
+            <div className="flex-none rotate-[-78.79deg]">
+              <div className="h-[606.174px] opacity-70 relative w-[542.635px]">
+                <div className="absolute inset-[-12.37%_-13.82%]">
+                  <img alt="" className="block max-w-none size-full" height="756.174" src={imgStar24} width="692.635" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full" data-node-id="3892:212372" data-name="Изменение ставки">
+            <div className="bg-[#18181b] border border-[rgba(0,0,0,0)] border-solid content-stretch flex flex-[134_0_0] h-[44px] items-center justify-center min-h-[44px] min-w-px px-[10px] relative rounded-[12px]" data-node-id="3892:212373" data-name="Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#fafafa] text-[14px] text-center tracking-[-0.1984px] whitespace-nowrap" data-node-id="3892:212374" style={{ fontVariationSettings: '"wdth" 100' }}>
+                +1 п.п.
+              </p>
+            </div>
+            <div className="bg-[rgba(24,24,27,0.04)] content-stretch flex flex-[134_0_0] h-[44px] items-center justify-center min-h-[44px] min-w-px px-[10px] relative rounded-[12px]" data-node-id="3892:212375" data-name="Button">
+              <p className="[word-break:break-word] font-['SF_Pro:Medium'] font-[510] leading-[20px] relative shrink-0 text-[#18181b] text-[14px] text-center tracking-[-0.1984px] whitespace-nowrap" data-node-id="3892:212376" style={{ fontVariationSettings: '"wdth" 100' }}>
+                −1 п.п.
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full" data-node-id="3892:212377">
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[337px]" data-node-id="3892:212378" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212379" data-name="Paragraph">
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[18px] relative shrink-0 text-[#71717b] text-[13px] tracking-[-0.1242px] whitespace-nowrap" data-node-id="3892:212380" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Изменение чистых расходов за год
+                </p>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex font-['SF_Pro:Medium'] font-[510] gap-[6px] items-baseline relative shrink-0 w-full whitespace-nowrap" data-node-id="3892:212381">
+                <p className="leading-[34px] relative shrink-0 text-[#18181b] text-[30px] tracking-[-0.3545px]" data-node-id="3892:212382" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  +13,2 млн
+                </p>
+                <p className="leading-[17px] relative shrink-0 text-[#71717b] text-[17px] tracking-[-1.1816px]" data-node-id="3892:212383" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  ₽
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start leading-[18px] relative shrink-0 text-[13px] tracking-[-0.1242px] w-full whitespace-nowrap" data-node-id="3892:212384" data-name="Definition List">
+              <div className="h-[18px] relative shrink-0 w-[320px]" data-node-id="3892:212385" data-name="Container">
+                <p className="absolute font-['SF_Pro:Regular'] font-normal left-0 text-[#71717b] top-0" data-node-id="3892:212386" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Проценты по долгу
+                </p>
+                <p className="-translate-x-full absolute font-['SF_Pro:Medium'] font-[510] left-[323.03px] text-[#18181b] text-right top-0" data-node-id="3892:212387" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  +28,2 млн ₽
+                </p>
+              </div>
+              <div className="h-[18px] relative shrink-0 w-[320px]" data-node-id="3892:212388" data-name="Container">
+                <p className="absolute font-['SF_Pro:Regular'] font-normal left-0 text-[#71717b] top-0" data-node-id="3892:212389" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Доход на новые размещения
+                </p>
+                <p className="-translate-x-full absolute font-['SF_Pro:Medium'] font-[510] left-[321.03px] text-[#18181b] text-right top-0" data-node-id="3892:212390" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  +15,0 млн ₽
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[8px] items-start overflow-clip p-[var(--spacing\/m-\(16\),16px)] relative rounded-[16px] shadow-[0px_6px_16px_0px_rgba(255,255,255,0.06),0px_1px_6px_0px_rgba(3,3,6,0.04),0px_0px_1.6px_0px_#e8e8eb] shrink-0 w-[337px]" data-node-id="3892:212391" data-name="Container">
+            <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[16px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 337 120.5' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(15.524 9.4834 -18.677 17.792 153.46 48.057)'><stop stop-color='rgba(255,255,255,0.4)' offset='0'/><stop stop-color='rgba(255,255,255,0.8)' offset='0.49589'/><stop stop-color='rgba(255,255,255,0.4)' offset='1'/></radialGradient></defs></svg>\")" }} />
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="3892:212392" data-name="Paragraph">
+              <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[19px] relative shrink-0 text-[#18181b] text-[13px] text-pretty tracking-[-0.1242px] w-[292px]" data-node-id="3892:212393" style={{ fontVariationSettings: '"wdth" 100' }}>
+                Дополнительный доход на остатки покрывает только часть роста расходов по долгу. База размещения — 17,2% годовых.
+              </p>
+            </div>
+            <div className="h-[23.5px] relative shrink-0 w-full" data-node-id="3892:212394" data-name="Container">
+              <div className="absolute content-stretch flex gap-[6px] items-center left-0 top-[6px]" data-node-id="3892:212395" data-name="Paragraph">
+                <div className="content-stretch flex gap-[var(--spacing\/xxxs-\(2\),2px)] items-end relative shrink-0" data-node-id="3892:212396" data-name="Text">
+                  <div className="bg-[#18181b] h-[5px] relative rounded-[1px] shrink-0 w-[3px]" data-node-id="3892:212397" data-name="Text" />
+                  <div className="bg-[#18181b] h-[7px] relative rounded-[1px] shrink-0 w-[3px]" data-node-id="3892:212398" data-name="Text" />
+                  <div className="bg-[#18181b] h-[9px] relative rounded-[1px] shrink-0 w-[3px]" data-node-id="3892:212399" data-name="Text" />
+                </div>
+                <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[16px] relative shrink-0 text-[#71717b] text-[12px] text-pretty tracking-[-0.048px] whitespace-nowrap" data-node-id="3892:212400" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  Уверенность высокая
+                </p>
+              </div>
+            </div>
+            <div className="absolute flex h-[629.111px] items-center justify-center mix-blend-plus-lighter right-[74.99px] top-[-323.05px] w-[677.468px]" data-node-id="3892:212401">
+              <div className="flex-none rotate-[-78.79deg]">
+                <div className="h-[586.576px] opacity-70 relative w-[525.091px]">
+                  <div className="absolute inset-[-12.79%_-14.28%]">
+                    <img alt="" className="block max-w-none size-full" height="736.576" src={imgStar23} width="675.091" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_8px_0px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,8 @@
+.hero-carousel__list-wrap { position: relative; }
+.hero-carousel__list-wrap .hero__list { width: 100%; }
+.hero-carousel__pager { gap: 0; }
+.hero-carousel__page { display: grid; place-items: center; min-width: 12px; height: 32px; }
+.hero-carousel__page .mf-pager__dot { display: block; transition: width 150ms ease, background-color 150ms ease, opacity 150ms ease; }
+.hero-carousel__page:focus-visible { outline: 2px solid var(--fx-text-primary); outline-offset: 2px; border-radius: 5px; }
+.hero .mf-bank-row { touch-action: pan-y; }
+@media (prefers-reduced-motion: reduce) { .hero-carousel__page .mf-pager__dot { transition: none; } }
